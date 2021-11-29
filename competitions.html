@@ -7,40 +7,35 @@
 <body onload="getCompetitions()">
 
 <!-- Sidebar -->
-<div class="w3-sidebar w3-pale-red w3-bar-block" style="width:15%" >
+<div class="w3-sidebar w3-red w3-bar-block" id="sidebar" style="width:15%" >
   <h3 class="w3-bar-item w3-red w3-center">Menu</h3>
-      <a href="home.html" class="w3-bar-item w3-button w3-center">Dashboard</a>
-      <a href="competitions.html" class="w3-bar-item w3-button w3-center">Competitions</a>
-      <a href="learn_more.html" class="w3-bar-item w3-button w3-center">How to play?</a>
-      <a href="contact_us.html" class="w3-bar-item w3-button w3-center">Contact Us</a>
+      <a href="home.html" class="w3-bar-item w3-pale-red w3-button w3-center" id="menus">Dashboard</a>
+      <a href="competitions.html" class="w3-bar-item w3-pale-red w3-button w3-center" id="menus">Competitions</a>
+      <a href="learn_more.html" class="w3-bar-item w3-pale-red w3-button w3-center" id="menus">How to play?</a>
+      <a href="contact_us.html" class="w3-bar-item w3-pale-red w3-button w3-center" id="menus">Contact Us</a>
 </div>
 
 <!-- Page Content -->
 <div style="margin-left:15%">
 
-    <div class="w3-container w3-light-red">
-        <h1>FANTASTOCK</h1>
+    <div class="w3-container w3-red" id="mainbar">
+<!--         <h1 id="double-border-text">FANTASTOCK</h1> -->
+        <div class="two">
+          <h1>FANTASTOCK<br><span>LEVEL UP YOUR STOCK MARKET GAME</span>
+          </h1>
+        </div>
+
     </div>
 
     <div class="w3-container">
-        <div class="w3-center" id="competitions_list"></div>
+        <div id="competitions_list"></div>
     </div>
 
 </div>
       
- 
-<!--  <script type="text/javascript">
-     
-    var checkDiv = setInterval(function(){
-    var my_div_width = $("#competitions_list").width(); // find width
-    if( my_div_width==0) { 
-        clearInterval(checkDiv);
-            getCompetitions();
-        }
-    }, 10000);
 
- </script>
- -->
+
+ 
 <script src="index.js"></script>
 <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -26,40 +26,78 @@ function showCompetitions(res) {
     newDiv.appendChild(newContent);
   }
   else {
+
+//     CompetitionId: "Competition_2"
+// attributes: Object
+          // enddate: "Feb 1 2022"
+          // entryfee: "5"
+          // poolsize: "5"
+          // startdate: "Jan 1 2022"
+          // totalamount: "100"
+          // winners: "4"
+// distribution: {1: 50, 2: 30, 3: 20}
+// rankings: {}
+// status: "YET TO START"
+// type: "Max"
+
     results=res.body;
     var toAdd = document.createDocumentFragment();
     for (var i = 0; i < results.length; i++) {
+       console.log(results[i])
        var newDiv = document.createElement('div');
-       newDiv.id = 'competiton_'+i;
-       newDiv.innerHTML += results[i]['CompetitionId']+"--->"+results[i]['status'];
+       newDiv.id = results[i]['CompetitionId'];
+       // newDiv.innerHTML += results[i]['CompetitionId']+"--->"+results[i]['status'];
        newDiv.className = 'competition_class';
-       toAdd.appendChild(newDiv);
+       //setting onclick
+       newDiv.setAttribute('onclick', "getCompetitionDetails(this.id);")
 
-        // console.log(results[i]["CompetitionId"]);
-        // var newDiv = document.getElementById("competitions");
-        // var btn = document.createElement("BUTTON");
-        // btn.innerHTML = results[i]['CompetitionId']+ "->" +results[i]["status"];
-        // var competiton_name = results[i]['CompetitionId'];
-        // btn.setAttribute('onclick','getCompetitionDetails(competiton_name);');
-        // newDiv.appendChild(btn);
-        // document.body.appendChild(newDiv);
-      // var newDiv = document.getElementById("competitions");
-      // const newContent = document.createTextNode(results[i]['CompetitionId']);
-      // newDiv.appendChild(newContent);
-      // newDiv.setAttribute("onclick", getCompetitionDetails(results[i]["CompetitionId"]))
-      // newDiv.appendChild(newimg);
-      // var btn = document.createElement("BUTTON");
-      // btn.innerHTML = "CLICK ME";
-      // document.body.appendChild(btn);
+       //setting the competition name
+       var competion_name=document.createElement('div');
+       competion_name.className='competion_name';
+       competion_name.innerHTML+=results[i]['CompetitionId']
+       newDiv.appendChild(competion_name)
+       
+       //setting the pool size
+       var poolSize=document.createElement('div');
+       poolSize.className='pool_size';
+       poolSize.innerHTML+="Pool size : "+results[i]['attributes'].poolsize
+       newDiv.appendChild(poolSize)
+
+       // setting total winners
+       var winners=document.createElement('div');
+       winners.className='winners_size';
+       winners.innerHTML+="Winners to be: top - "+results[i]['attributes'].winners
+       newDiv.appendChild(winners)
+       
+       // //setting total money that can be won
+       var t_amt=document.createElement('div');
+       t_amt.className='amount_to_win';
+       t_amt.innerHTML+=results[i]['type']+" -- "+results[i]['attributes'].totalamount
+       newDiv.appendChild(t_amt)
+       
+       //setting status
+       var status=document.createElement('div');
+       status.className='status';
+       status.innerHTML+= "Status: "+results[i]['status']
+       if(results[i]['status']==='LIVE'){
+        status.setAttribute("style", "background-color: green;")
+       }else{
+        status.setAttribute("style", "background-color: red;")
+       }
+       newDiv.appendChild(status)
+
+
+       //adding everything to toAdd frame
+       toAdd.appendChild(newDiv);
 
     }
     document.getElementById("competitions_list").appendChild(toAdd);
-    // document.body.appendChild(toAdd);
   }
 }
 
 
-///// SHOW THE COMPETITION WITH COMPANIES TO SELECT
+///// SHOW THE COMPETITION WITH COMPANIES TO SELECT TO BE RETRIEVED AFTER LF4 is created ///////
+
   function getCompetitionDetails(competiton){
-    console.log("HERE I AM TO GET COMPETITIONS")
+    alert("HERE I AM TO GET '"+competiton+ "' competition's details");
   }
