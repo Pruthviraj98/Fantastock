@@ -14,9 +14,17 @@ es = Elasticsearch([esurl], http_auth=('admin', 'Admin@123'))
 def lambda_handler(event, context):
     doc=event['body-json']
     comid=doc["companies"]
+    accesstoken=doc['token']
+    client = boto3.client('cognito-idp', region_name='us-west-2')
+    response = client.get_user(
+    AccessToken=accesstoken
+    )
+    print(response)
+    name = response['Username']
+    print(name)
     # uid=doc["uid"]
-    uid="ABCDEFG"
-    return([uid, comid])
+    # uid="ABCDEFG"
+    return([name, comid])
     # res={}
     # if(es.exists(index="competitions", id=doc["cid"]) and es.exists(index="competitions", id=doc["cid"])):
     #     body={
