@@ -16,7 +16,6 @@
   box-shadow: rgba(0, 0, 0, 0.17)  0px -23px 25px 0px inset, rgb(255,255,255) 0px -36px 30px 0px inset, rgb(255,255,255)  0px -79px 40px 0px inset, rgb(255,255,255)  0px 2px 1px, rgb(255,77,77)  0px 4px 2px, rgb(255,77,77)  0px 8px 4px, rgb(255,77,77)  0px 16px 8px, rgb(255,77,77) 0px 32px 16px;
 }
 
-
 .two h1{
     text-transform: capitalize;
     margin-top: 20px;
@@ -24,7 +23,7 @@
     font-size: 40px;
 }
 
-.two h1 span {
+.two h1 span{
   font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
@@ -32,6 +31,7 @@
   padding-left: 0.25em;
   color: rgba(0, 0, 0, 0.9);
 }
+
 .two{
   text-align:center;
 }
@@ -94,3 +94,30 @@
 }
 
 
+.company_name{
+  font-family: arial;
+  font-size: 20px;
+  margin-top: 10px;
+  width: 900px;
+  height: 40px;
+  border: 3px solid #73AD21;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgb(240,128,128) 0px -36px 30px 0px inset, rgb(240,128,128) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.17) 0px 2px 1px, rgba(0, 0, 0, 0.17) 0px 4px 2px, rgba(0, 0, 0, 0.17) 0px 8px 4px, rgba(0, 0, 0, 0.17) 0px 16px 8px;
+}
+
+.tickbox{
+  width: 20px;
+  height: 20px;
+}
+
+.SubmitButton{
+  align-content: center;
+  font-family: arial;
+  font-size: 30px;
+  background-color: red;
+  width: 150px;
+  height: 60px;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  margin-top: 20px;
+}
