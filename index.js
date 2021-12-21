@@ -195,8 +195,12 @@ function showCompetitionDetails(res) {
     }
     
     var apigClient = apigClientFactory.newClient({ apiKey: "YGYREcyKsh2vbajRUEkBa7I8OTnjDFUh8hNiKSze" });
+    const access_token = localStorage.getItem("access_token");
+    console.log(access_token);
     var body = {
-      "companies":company
+      "companies":company,
+      "token":access_token
+      
     };
     var params = {};
     var additionalParams = {headers: {
