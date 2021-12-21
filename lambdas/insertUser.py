@@ -1,20 +1,25 @@
 import json
+from datetime import date
 from elasticsearch import Elasticsearch
 
 esurl="https://search-fantastock0-23vzis4fs4cnwijmzo5e46qpza.us-west-2.es.amazonaws.com"
 es = Elasticsearch([esurl], http_auth=('admin', 'Admin@123'))
 
-uid="bpvarma"
-doc={
-          "name" : "Pavan Varma",
+def storeloggedinuserinfo(userinfo):
+
+    uid=userinfo['sub']
+    doc={
+          "name" : userinfo['name'],
           "userid" : uid,
-          "dateofjoin" : "2021-11-10",
+          "dateofjoin" : str(date.today()),
           "coins" : 100,
           "competitions" : {}
     }
-def lambda_handler(event, context):
     res = es.index(index="user", id=uid, body=doc)
-    return {
-        'statusCode': 200,
-        'msg': json.dumps(res)
-    }
+    
+def lambda_handler(event, context):
+    userinfo= event['request']['userAttributes']
+    storeloggedinuserinfo(userinfo)
+    print(userinfo)
+    # Return to Amazon Cognito
+    return event
