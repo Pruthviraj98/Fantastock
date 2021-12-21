@@ -22,9 +22,12 @@ def lambda_handler(event, context):
     print(response)
     name = response['Username']
     print(name)
+    for attr in response['UserAttributes']:
+        if attr['Name'] == 'sub':
+            uid= attr['Value']
     # uid=doc["uid"]
     # uid="ABCDEFG"
-    return([name, comid])
+    return([uid, comid])
     # res={}
     # if(es.exists(index="competitions", id=doc["cid"]) and es.exists(index="competitions", id=doc["cid"])):
     #     body={
