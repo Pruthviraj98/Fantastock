@@ -91,7 +91,8 @@ function showCompetitions(res) {
   function fetchCompetitionDetails(){
     var params = new URLSearchParams(document.location.search);
     var competiton = params.get("competition");
-
+    const access_token = localStorage.getItem("access_token");
+    console.log(access_token);
     var apigClient = apigClientFactory.newClient({ apiKey: "YGYREcyKsh2vbajRUEkBa7I8OTnjDFUh8hNiKSze" });
     var body = {
       "competition":competiton
