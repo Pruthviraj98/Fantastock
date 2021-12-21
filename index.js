@@ -95,7 +95,8 @@ function showCompetitions(res) {
     console.log(access_token);
     var apigClient = apigClientFactory.newClient({ apiKey: "YGYREcyKsh2vbajRUEkBa7I8OTnjDFUh8hNiKSze" });
     var body = {
-      "competition":competiton
+      "competition":competiton,
+      "token":access_token
     };
     var params = {};
     var additionalParams = {headers: {
