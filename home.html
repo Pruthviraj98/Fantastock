@@ -52,13 +52,16 @@
 
 <script>
   function getToken(){
-  
+  const access_token = localStorage.getItem('access_token') || "";
+  console.log(access_token);
+  if(access_token==""){
   var queryString = window.location.hash;
   console.log(queryString);
   const urlParams = new URLSearchParams(queryString);
   const access_token = urlParams.get("access_token");
   console.log(access_token);
   localStorage.setItem("access_token",access_token);
+  }
   var apigClient = apigClientFactory.newClient({ apiKey: "YGYREcyKsh2vbajRUEkBa7I8OTnjDFUh8hNiKSze" });
     var body = {
       "token":access_token
