@@ -58,24 +58,24 @@ https://invis.io/2P11Y357DMQ7
 
 ## **OUTPUT SCREENS:**
 1. Intro page:
-<img src="https://raw.githubusercontent.com/Pruthviraj98/Fantastock/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.27.28%20AM.png?token=AGEA5SRSIBPOHK66MI2VTY3BYQHYW" width="800" height="500">
+<img src="https://github.com/Pruthviraj98/Fantastock/blob/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.27.28%20AM.png?raw=true" width="800" height="500">
 
 2. Google Authentication (with verification code) page:
-<img src="https://raw.githubusercontent.com/Pruthviraj98/Fantastock/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.27.41%20AM.png?token=AGEA5SWTTQXMWI5HWEUF5TLBYQHHW" width="800" height="500">
+<img src="https://github.com/Pruthviraj98/Fantastock/blob/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.27.41%20AM.png?raw=true" width="800" height="500">
 
 3. Dashboard page:
-<img src="https://raw.githubusercontent.com/Pruthviraj98/Fantastock/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.27.55%20AM.png?token=AGEA5SRGG2ECXFMNJYHGQKTBYQHJ4" width="800" height="500">
+<img src="https://github.com/Pruthviraj98/Fantastock/blob/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.27.55%20AM.png?raw=true" width="800" height="500">
 
 4. Competition Pools page:
-<img src="https://raw.githubusercontent.com/Pruthviraj98/Fantastock/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.28.03%20AM.png?token=AGEA5SV6N2D7VIQJ653NFJ3BYQHVY" width="800" height="500">
+<img src="https://github.com/Pruthviraj98/Fantastock/blob/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.28.03%20AM.png?raw=true" width="800" height="500">
 
 5. Competition Pool Details page:
-<img src="https://raw.githubusercontent.com/Pruthviraj98/Fantastock/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.28.19%20AM.png?token=AGEA5SWI4R245P7X32SRML3BYQHM6" width="800" height="500">
+<img src="https://github.com/Pruthviraj98/Fantastock/blob/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.28.19%20AM.png?raw=true" width="800" height="500">
 
 6. Competition Registered Confirmation page:
-<img src="https://raw.githubusercontent.com/Pruthviraj98/Fantastock/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.28.30%20AM.png?token=AGEA5STX3UQD3Y7IDAF77YLBYQHP2" width="800" height="500">
+<img src="https://github.com/Pruthviraj98/Fantastock/blob/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.28.30%20AM.png?raw=true" width="800" height="500">
 
 7. How to Play (Instructions) page:
-<img src="https://raw.githubusercontent.com/Pruthviraj98/Fantastock/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.28.37%20AM.png?token=AGEA5SX65JBEYIEUO6MLVQDBYQHRI" width="800" height="500">
+<img src="https://github.com/Pruthviraj98/Fantastock/blob/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.28.37%20AM.png?raw=true" width="800" height="500">
 
 
