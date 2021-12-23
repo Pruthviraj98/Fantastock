@@ -27,6 +27,11 @@ Sambit Sahu, NYU Tandon School of Engineering
 
    Compared to previous applications, we have planned to focus on both the stock market as well as digital currencies. Financial and business news plays a key role in fluctuating the market trends. Policies by governments across the world also sway the stock prices, understanding them is vital in predicting them. And we plan on providing this information on the dashboard of premium users. We also plan to provide the trending stock to users based on trends in social media.
 
+### AWS ARCHITECTURE:
+
+<img src="https://raw.githubusercontent.com/Pruthviraj98/Fantastock/main/Fantastock.jpg?token=AGEA5STMR3YA4BTSG5HDWP3BYQMFG" width="800" height="500">
+
+
 ### Technologies:
 1. Compute: Lambda
 2. Storage: S3
