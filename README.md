@@ -61,8 +61,8 @@ https://invis.io/2P11Y357DMQ7
 3. Dashboard page:
 <img src="https://raw.githubusercontent.com/Pruthviraj98/Fantastock/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.27.55%20AM.png?token=AGEA5SRGG2ECXFMNJYHGQKTBYQHJ4" width="800" height="500">
 
-4. Compatition Pools page:
-<img src="https://raw.githubusercontent.com/Pruthviraj98/Fantastock/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.27.28%20AM.png?token=AGEA5SVBE4T46UMMSJPPR33BYQGYG" width="800" height="500">
+4. Competition Pools page:
+<img src="https://raw.githubusercontent.com/Pruthviraj98/Fantastock/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.28.03%20AM.png?token=AGEA5SV6N2D7VIQJ653NFJ3BYQHVY" width="800" height="500">
 
 5. Competition Pool Details page:
 <img src="https://raw.githubusercontent.com/Pruthviraj98/Fantastock/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.28.19%20AM.png?token=AGEA5SWI4R245P7X32SRML3BYQHM6" width="800" height="500">
