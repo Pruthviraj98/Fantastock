@@ -1,13 +1,7 @@
 // dashboard setup
 function getDetails(){
-    const access_token = localStorage.getItem('access_token') || "";
-    if(access_token==""){
-      var queryString = window.location.hash;
-      const urlParams = new URLSearchParams(queryString);
-      const access_token = urlParams.get("access_token");
-      localStorage.setItem("access_token",access_token);
-    }
-
+    const access_token = localStorage.getItem("access_token"); // NEW
+    console.log(access_token); // NEW
     var apigClient = apigClientFactory.newClient({ apiKey: "YGYREcyKsh2vbajRUEkBa7I8OTnjDFUh8hNiKSze" });
       var body = {
           "token":access_token
@@ -45,6 +39,11 @@ function getDetails(){
     header.setAttribute('class', 'header');
     header.innerHTML="YOUR MAIN STATISTICS";
     detailDiv.appendChild(header);
+
+    var nameDiv=document.createElement('div');
+    nameDiv.setAttribute('class', "detail");
+    nameDiv.innerHTML="USERNAME : "+current_name;
+    detailDiv.appendChild(nameDiv);
 
     var joindt=document.createElement('div');
     joindt.setAttribute('class', "detail");
