@@ -4,33 +4,54 @@ from elasticsearch import Elasticsearch
 esurl="https://search-fantastock0-23vzis4fs4cnwijmzo5e46qpza.us-west-2.es.amazonaws.com"
 es = Elasticsearch([esurl], http_auth=('admin', 'Admin@123'))
 
-comid="Competition_3"
+comid="Demo Competition 1" #MUST CHANGE THIS EVERYTIME!!!!
 doc={
-  'status': 'Live',
-  'category': 'Mega',
-  'type': 'Weekly',
-  'Competitionid': "random name",
-  'attributes': {
-    'startdate': '2021-12-10', #yyy-mm-dd
-    'enddate': '2021-12-17',
-    'poolsize': '10',
-    'winners': '150',
-    'totalamount': '5000',
-    'entryfee': '5',
-    'changes':'0'
-  },
-  'distribution': {
-    '1': 500,
-    '2': 300,
-    '3-40': 55,
-    '41-150': 10,
-  },
-  'rankings': {}
-  
+          "status" : "Yet to Start",
+          "category" : "Mini",
+          "type" : "Mini",
+          "Competitionid" : comid,
+          "attributes" : {
+            "startdate" : "2021-12-19",
+            "enddate" : "2021-12-26",
+            "poolsize" : "5",
+            "winners" : "2",
+            "totalamount" : "40",
+            "entryfee" : "10",
+            "changes" : "0"
+          },
+          "distribution" : {
+            "1" : 25,
+            "2" : 15
+          },
+  'rankings': {} #current rankings
 }
 
+
+def updateonlydates(compid,sd,ed):
+    body={
+                "script": {
+                "lang": "painless",
+                "source": """
+                    ctx._source.attributes.startdate=params.sd;
+                    ctx._source.attributes.enddate=params.ed
+                """,
+                "params": {
+                    "sd":sd,
+                    "ed":ed
+                }
+                }
+            }
+    res= es.update(index="competitions", id=compid, body=body)
+
 def lambda_handler(event, context):
+    res={}
     res = es.index(index="competitions", id=comid, body=doc)
+    #updateonlydates(comid,"2021-12-19","2021-12-22")
+    #use this if you wanna delete competitions
+    
+    # query = {"query": {"match": {"Competitionid": '2022-MEGA'}}}
+    # res = es.delete_by_query(index="competitions", body=query)
+    
     return {
         'statusCode': 200,
         'msg': json.dumps(res)
