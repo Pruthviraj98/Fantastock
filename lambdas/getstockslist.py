@@ -4,7 +4,7 @@ import json
 
 def lambda_handler(event, context):
     
-    sectors = dict({'DecMonthlyCompetition': 'Financial Services', 'WEEK: 43': 'Healthcare', '2022-MEGA': 'Technology','WeeklyMini': 'Healthcare', "Demo Competition":"Healthcare"})
+    sectors = dict({"Demo Competition":"Healthcare", "Demo Competition 1":"Healthcare"})
 
     competition=event['body-json']['competition']
     #e=json.loads(event)
