@@ -53,7 +53,7 @@ https://invis.io/2P11Y357DMQ7
 
 ## **OUTPUT SCREENS:**
 1. Intro page:
-<img src="https://raw.githubusercontent.com/Pruthviraj98/Fantastock/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.27.28%20AM.png?token=AGEA5SVBE4T46UMMSJPPR33BYQGYG" width="800" height="500">
+<img src="https://raw.githubusercontent.com/Pruthviraj98/Fantastock/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.27.28%20AM.png?token=AGEA5SRSIBPOHK66MI2VTY3BYQHYW" width="800" height="500">
 
 2. Google Authentication (with verification code) page:
 <img src="https://raw.githubusercontent.com/Pruthviraj98/Fantastock/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.27.41%20AM.png?token=AGEA5SWTTQXMWI5HWEUF5TLBYQHHW" width="800" height="500">
