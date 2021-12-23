@@ -49,3 +49,8 @@ https://invis.io/2P11Y357DMQ7
 2. Dashboard - POST
 3. Competition pools - GET
 4. Pool Data - POST
+
+
+## **OUTPUT SCREENS:**
+1. Intro page
+<img src="https://raw.githubusercontent.com/Pruthviraj98/Fantastock/main/output_screens/Screen%20Shot%202021-12-23%20at%2012.27.28%20AM.png?token=AGEA5SVBE4T46UMMSJPPR33BYQGYG" width="800" height="500">
