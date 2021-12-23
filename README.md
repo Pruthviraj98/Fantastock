@@ -29,7 +29,7 @@ Sambit Sahu, NYU Tandon School of Engineering
 
 ### AWS ARCHITECTURE:
 
-<img src="https://raw.githubusercontent.com/Pruthviraj98/Fantastock/main/Fantastock.jpg?token=AGEA5STMR3YA4BTSG5HDWP3BYQMFG" width="800" height="500">
+<img src="https://github.com/Pruthviraj98/Fantastock/blob/main/Fantastock.jpg?raw=true" width="800" height="500">
 
 
 ### Technologies:
